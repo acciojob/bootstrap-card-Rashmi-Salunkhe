@@ -25,6 +25,13 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.card-header {
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
 .new-features h2 {
   border: 1px solid #ddd;
   border-radius: 2px;
@@ -55,12 +62,22 @@ body {
   margin-bottom: 20px;
 }
 
+.btn-primary {
+  background-color: #0C95CC;
+  border: none;
+  color: white;
+}
+
 .alert {
   background-color: #CC0C32; /* Set the background color of the entire alert card */
   border-radius: 5px;
   padding: 10px;
   color: white;
-	width: 40%;
+  width: 40%;
+}
+
+.bg-danger {
+  background-color: #CC0C32;
 }
 
 .alert h3 {
@@ -98,6 +115,7 @@ body {
   padding: 10px;
   margin-bottom: 0;
 }
+
 .president-pressure h3 {
   margin-top: 5px;
   margin-left: 10px; /* Reduced margin */
@@ -109,10 +127,17 @@ body {
   margin-left: 10px; /* Reduced margin */
   margin-right: 10px; /* Reduced margin */
 }
-	.card-text {
-		margin-top: 5px;
-		color: grey;
-	}
+
+.card-text {
+  margin-top: 5px;
+  color: grey;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
 </style>
 </head>
 <body>
@@ -120,27 +145,27 @@ body {
 <div class="container">
   <h1>Welcome to Sync5</h1>
   <div class="card new-features">
-    <h2>New Features</h2>
+    <h2 class="card-title">New Features</h2>
     <div class="mobile-tablet">
       <h3>Mobile and Tablet support</h3>
       <p>With this new update you will be able to sync your work across large number of platforms.</p>
     </div>
-    <button class="read-more">Read more</button>
+    <button class="read-more btn-primary">Read more</button>
   </div>
-  <div class="card alert">
-    <h3>Alert</h3>
+  <div class="card alert bg-danger">
+    <h3 class="card-title">Alert</h3>
     <div class="node-dead">
       <h4>Node Dead</h4>
       <p>Node 5 (east-us) is offline for last 12 days.</p>
     </div>
   </div>
   <div class="card image">
-    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-t9E2xx6XBYkFO9ko593_f86tSk625A_V8uRSn9eirLNBL3_y" alt="Freediver">
+    <img class="card-img-top" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-t9E2xx6XBYkFO9ko593_f86tSk625A_V8uRSn9eirLNBL3_y" alt="Freediver">
     <div class="card president-pressure">
-      <h3>President under Pressure</h3>
+      <h3 class="card-title">President under Pressure</h3>
       <p>The US president is under pressure to respond to a widespread cyber-attack linked to China.</p>
-	     <p class="card-text text-muted">Last updated 12 mins ago</p>
-	</div>
+      <p class="card-text text-muted">Last updated 12 mins ago</p>
+    </div>
   </div>
 </div>
 
