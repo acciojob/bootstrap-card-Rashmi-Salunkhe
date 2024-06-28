@@ -1,16 +1,148 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
 
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.container h1 {
+  margin-bottom: 5px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-features h2 {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 10px;
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+}
+
+.mobile-tablet {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+  
+.read-more {
+  background-color: #0C95CC;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 20px; /* Add margin from the left side */
+  margin-bottom: 20px;
+}
+
+.alert {
+  background-color: #CC0C32; /* Set the background color of the entire alert card */
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+	width: 40%;
+}
+
+.alert h3 {
+  border: 1px solid #CC0C32;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  background-color: #CC0C32;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+  
+.node-dead h4, p {
+  margin: 20px;
+}
+
+.image {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.image img {
+  width: 100%;
+  height: 300px; /* Adjust the height of the image */
+  object-fit: cover; /* Maintain the aspect ratio */
+}
+
+.president-pressure {
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+  margin-bottom: 0;
+}
+.president-pressure h3 {
+  margin-top: 5px;
+  margin-left: 10px; /* Reduced margin */
+  margin-right: 10px; /* Reduced margin */
+}
+
+.president-pressure p {
+  margin-top: 5px;
+  margin-left: 10px; /* Reduced margin */
+  margin-right: 10px; /* Reduced margin */
+}
+	.card-text {
+		margin-top: 5px;
+		color: grey;
+	}
+</style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="container">
+  <h1>Welcome to Sync5</h1>
+  <div class="card new-features">
+    <h2>New Features</h2>
+    <div class="mobile-tablet">
+      <h3>Mobile and Tablet support</h3>
+      <p>With this new update you will be able to sync your work across large number of platforms.</p>
+    </div>
+    <button class="read-more">Read more</button>
+  </div>
+  <div class="card alert">
+    <h3>Alert</h3>
+    <div class="node-dead">
+      <h4>Node Dead</h4>
+      <p>Node 5 (east-us) is offline for last 12 days.</p>
+    </div>
+  </div>
+  <div class="card image">
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-t9E2xx6XBYkFO9ko593_f86tSk625A_V8uRSn9eirLNBL3_y" alt="Freediver">
+    <div class="card president-pressure">
+      <h3>President under Pressure</h3>
+      <p>The US president is under pressure to respond to a widespread cyber-attack linked to China.</p>
+	     <p class="card-text text-muted">Last updated 12 mins ago</p>
+	</div>
+  </div>
+</div>
 
 </body>
-
 </html>
